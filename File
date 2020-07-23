@@ -1,0 +1,15 @@
+sum = 0
+list=[]
+while(True):
+    userInput = input("Enter the item price or press q to quit: \n")
+    if(userInput!='q'):
+        sum = sum + int(userInput)
+        print(f"Order total so far: {sum}")
+        list.append(int(userInput))
+
+    else:
+        print("Sriram Verma Stores")
+        for i in list:
+            print(i)
+        print(f"Your bill total is {sum}. Thanks for shopping with us")
+        break
